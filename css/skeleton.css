@@ -1,0 +1,682 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+- Custom CSS
+*/
+
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+
+/* For devices larger than 400px */
+
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+
+/* For devices larger than 550px */
+
+@media (min-width: 650px) {
+  .container {
+    width: 80%;
+  }
+  .columns {
+    margin-left: 2%;
+    padding: 0 10px;
+  }
+  .columns:first-child {
+    margin-left: 0;
+  }
+  .three.columns {
+    width: 22%;
+  }
+  .four.columns {
+    width: 30.6666666667%;
+  }
+  .six.columns {
+    width: 48%;
+  }
+  /* Offsets */
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.65em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  background: #F7F7F7;
+}
+
+.row, .columns, header {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h2, h3, h4, h5 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.75rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem;
+}
+
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem;
+}
+
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-size: 3.6rem;
+  }
+  h4 {
+    font-size: 3.0rem;
+  }
+  h5 {
+    font-size: 2.4rem;
+  }
+}
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  color: #1EAEDB;
+}
+
+a:hover {
+  color: #0FA0CE;
+}
+
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:hover, .button:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
+.button.button-orange {
+  color: #FFF;
+  background-color: #FB8936;
+  border-color: #FB8936;
+}
+
+.button.button-orange:hover, .button.button-orange:focus {
+  color: #FFF;
+  background-color: #FB6C04;
+  border-color: #FB6C04;
+}
+
+.navigation a {
+  color: #000;
+}
+
+.navigation a.login {
+  background: #1EAEDB;
+  color: #FFF;
+}
+
+.navigation a.login:hover {
+  background: #0FA0CE;
+  color: #FFF;
+}
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Removes awkward default styles on some inputs for iOS */
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+input[type="checkbox"] {
+  display: inline;
+}
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul {
+  list-style: circle inside;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button {
+  margin-bottom: 1rem;
+}
+
+input {
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  margin-bottom: 2.5rem;
+}
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.m-tb-1 {
+  margin: 1em 0;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
+}
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Self Clearing Goodness */
+
+.container:after, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+
+
+/* Larger than phablet (also point when grid becomes active) */
+
+
+/* Larger than tablet */
+
+
+/* Larger than desktop */
+
+
+/* Larger than Desktop HD */
+
+
+/* Custom CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+  max-width: 1000px;
+}
+
+.header {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+footer {
+  /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background: #e5e5e5; */
+  padding: 0;
+  margin-top: 2em;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+}
+
+/* .footer-links li:first-of-type {
+  border-right: 1px solid grey;
+  padding-right: 1em;
+}
+
+.footer-links li:last-of-type {
+  padding-left: .5em;
+} */
+
+.footer-links li {
+  display: inline-block;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+/* navigation */
+
+.navigation {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.navigation li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.navigation li a:hover,
+.navigation .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.navigation .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 15px 0 0 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.navigation .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.navigation .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  margin-top: 5px;
+}
+
+.navigation .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navigation .menu-icon .navicon:before,
+.navigation .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navigation .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.navigation .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.navigation .menu-btn {
+  display: none;
+}
+
+.navigation .menu-btn:checked ~ .menu {
+  max-height: 286px;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .navigation li {
+    float: left;
+    margin-bottom: 0;
+  }
+  .navigation li a {
+    padding: 20px 30px;
+  }
+  .navigation .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .navigation .menu-icon {
+    display: none;
+  }
+}
+
+
+.value-prop {
+  margin-top: 1rem;
+}
+
+.value-props {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.value-img {
+  display: block;
+  text-align: center;
+  margin: 2.5rem auto 0;
+}
+
+.img-responsive {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.masonry { /* Masonry container */
+  column-count: 1;
+  column-gap: 1.5em;
+}
+
+.faq-box {
+  box-shadow: 1px 1px 1px rgba( 0,0,0,0.2 );
+  background: #FBFBFB;
+  display: inline-block;
+  margin: .5em auto;
+  width: 90%;
+  padding: 5px 20px;
+}
+
+
+/* Larger than phone */
+
+@media (min-width: 550px) {
+  .header {
+    margin-top: 14rem;
+  }
+  .value-props {
+    margin-top: 9rem;
+    margin-bottom: 7rem;
+  }
+  .value-img {
+    margin-bottom: 1rem;
+  }
+  .img-responsive {
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+  }
+  .masonry { /* Masonry container */
+    column-count: 2;
+    column-gap: 1.5em;
+  }  
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+  .masonry { /* Masonry container */
+    column-count: 3;
+    column-gap: 1.5em;
+  }  
+  
+  /* Popover */
+  .popover-item:first-child .popover-link:after, .popover-item:first-child .popover-link:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .popover-item:first-child .popover-link:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+  .popover-item:first-child .popover-link:before {
+    border-color: rgba(238, 238, 238, 0);
+    border-bottom-color: #eee;
+    border-width: 11px;
+    margin-left: -11px;
+  }
+  .popover-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .popover-item {
+    padding: 0;
+    margin: 0;
+  }
+  .popover-link {
+    position: relative;
+    color: #222;
+    display: block;
+    padding: 8px 20px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.0rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: .1rem;
+  }
+  .popover-item:first-child .popover-link {
+    border-radius: 4px 4px 0 0;
+  }
+  .popover-item:last-child .popover-link {
+    border-radius: 0 0 4px 4px;
+    border-bottom-width: 0;
+  }
+  .popover-link:hover {
+    color: #fff;
+    background: #33C3F0;
+  }
+  .popover-link:hover, .popover-item:first-child .popover-link:hover:after {
+    border-bottom-color: #33C3F0;
+  }
+}
