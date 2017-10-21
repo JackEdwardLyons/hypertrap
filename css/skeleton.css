@@ -156,7 +156,7 @@ body {
 h2, h3, h4, h5 {
   margin-top: 1rem;
   margin-bottom: 2rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 h2 {
@@ -621,7 +621,7 @@ li > a {
 }
 
 .navigation .menu-btn:checked ~ .menu {
-  max-height: 286px;
+  min-height: 300px;
 }
 
 .navigation .menu-btn:checked ~ .menu-icon .navicon {
@@ -668,7 +668,7 @@ li > a {
 
 .value-props {
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
 }
 
 .value-img {
@@ -706,7 +706,6 @@ li > a {
   }
   .value-props {
     margin-top: 9rem;
-    margin-bottom: 7rem;
   }
   .value-img {
     margin-bottom: 1rem;
