@@ -187,6 +187,10 @@ p, li {
   font-size: 1.8rem;
 }
 
+small {
+  font-size: 65%;
+  color: #888;
+}
 
 /* Larger than phablet */
 
@@ -252,7 +256,8 @@ a:hover {
   color: #FFF;
   background-color: #FB8936;
   border-color: #FB8936;
-  margin-top: .75em;
+  margin-top: .75rem;
+  margin-bottom: 0;
 }
 
 .button.button-orange:hover, .button.button-orange:focus {
@@ -337,8 +342,17 @@ ul {
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.align-top {
+  display: inline;
+  vertical-align: top;
+}
+
 .pos-relative {
   position: relative;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 .uppercase {
@@ -362,7 +376,16 @@ ul {
 }
 
 .m-t-0 {
-  margin-top: 0;
+  margin-top: 0 !important;
+}
+
+.m-b-0 {
+  margin-bottom: 0 !important;
+}
+
+.m-tb-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .m-t-1 {
@@ -385,9 +408,14 @@ ul {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.grey-feature {
+  background: #E7E7E7;
+  padding: 20px 20px 0;
+}
+
 hr {
   margin-top: 2rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1;
 }
@@ -396,6 +424,35 @@ hr {
   position: absolute;
   bottom: 0;
   right: -10px
+}
+
+.download-links img {
+  max-width: 250px;
+  max-height: 100px;
+  position: relative;
+}
+
+.ios-store {
+  bottom: 2px;
+}
+
+.chrome-extension {
+  top: 10px;
+}
+
+.plus-list {
+  list-style: none;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 3rem;
+}
+
+.plus-list > li:before {
+  content: '+';
+  font-size: 4rem;
+  margin-right: 1rem;
+  position: relative;
+  top: 8px;
 }
 
 @media screen and ( min-width: 400px ) {
@@ -493,16 +550,11 @@ there.
   max-width: 1000px;
 }
 
-.header {
-  margin-top: 10rem;
-  text-align: center;
-}
-
 footer {
-  /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  background: #e5e5e5; */
-  padding: 0;
-  margin-top: 2em;
+  background: #333;
+  color: #8A8B86;
+  padding-top: 6px;
+  margin-top: 3rem;
 }
 
 .footer-links {
@@ -510,14 +562,18 @@ footer {
   margin: 0;
 }
 
-/* .footer-links li:first-of-type {
-  border-right: 1px solid grey;
-  padding-right: 1em;
+.footer-links li {
+  font-size: 12px;
 }
 
-.footer-links li:last-of-type {
-  padding-left: .5em;
-} */
+.footer-links li > a {
+  color: #AAAAAA;
+}
+
+.footer-links li > a:hover {
+  color: #8A8B86;
+  cursor: pointer;
+}
 
 .footer-links li {
   display: inline-block;
@@ -534,6 +590,7 @@ li > a {
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
+  height: 44px;
   z-index: 3;
   top: 0;
 }
@@ -548,7 +605,7 @@ li > a {
 
 .navigation li a {
   display: block;
-  padding: 20px 20px;
+  padding: 8px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
@@ -562,8 +619,12 @@ li > a {
   display: block;
   float: left;
   font-size: 2em;
-  padding: 15px 0 0 20px;
+  padding: 0 5px;
   text-decoration: none;
+}
+
+.navigation .logo > img {
+  width: 90%;
 }
 
 /* menu */
@@ -580,10 +641,10 @@ li > a {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 22px 20px;
   position: relative;
   user-select: none;
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .navigation .menu-icon .navicon {
@@ -621,7 +682,9 @@ li > a {
 }
 
 .navigation .menu-btn:checked ~ .menu {
-  min-height: 300px;
+  min-height: 206px;
+  position: relative;
+  top: -7px;
 }
 
 .navigation .menu-btn:checked ~ .menu-icon .navicon {
@@ -649,7 +712,7 @@ li > a {
     margin-bottom: 0;
   }
   .navigation li a {
-    padding: 20px 30px;
+    padding: 8px 30px;
   }
   .navigation .menu {
     clear: none;
@@ -677,6 +740,10 @@ li > a {
   margin: 2.5rem auto 0;
 }
 
+.value-props-img {
+  width: 100%;
+}
+
 .img-responsive {
   width: 100%;
   margin: 0 auto;
@@ -699,13 +766,15 @@ li > a {
 
 
 /* Larger than phone */
-
 @media (min-width: 550px) {
-  .header {
-    margin-top: 14rem;
+  header {
+    margin-top: 7rem;
+  }
+  footer {
+    margin-top: 0;
   }
   .value-props {
-    margin-top: 9rem;
+    margin-top: 3rem;
   }
   .value-img {
     margin-bottom: 1rem;
@@ -788,5 +857,11 @@ li > a {
   }
   .popover-link:hover, .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 1150px) {
+  .value-props-img {
+    width: 90% !important;
   }
 }

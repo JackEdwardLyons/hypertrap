@@ -59,48 +59,39 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <header class="header">
 
-      <img class="value-img" src="images/logo_big.png" alt="HyperTrap logo">
-      <h2 class="title m-tb-1">For people who like to juggle knives.</h2>
-
-      <div class="pos-relative row">
-        <!-- <img class="limited-time-offer" src="./images/free_limited.png" alt="Get HyperTrap free for a limited time."> -->
-        <a class="button button-orange" href="https://hypertrap.com/register">
-          Set my first trap
-        </a>
-      </div>
+    <header>
+      <div class="value-props row">
+        <div class="six columns">
+          <h2 class="title lowercase">For people who like to juggle knives.</h2>
+          <a href="images/logo_big.png">
+            <img class="value-img" src="images/logo_big.png" alt="HyperTrap logo">
+          </a>
+        </div>
+        <div class="six columns text-left grey-feature">
+          <h3>Set traps and catch changes <small>in any language</small></h3>
+          <ul class="plus-list">
+            <li class="">
+              Know instantly when (almost) anything on the web changes
+            </li>
+            <li class="">
+              Automatic logbook of deltas, compare and share with anyone
+            </li>
+            <li class="">
+              Get notified when a specific phrase appears or value is reached
+            </li>
+          </ul>
+        </div>
+      </div><!-- end .row -->
     </header>
 
-    <div class="value-props row">
-      <div class="six columns">
-        <img class="value-img" src="images/hypertrap_config2.jpg" alt="HyperTrap confugration screen">
-      </div>
-      <div class="six columns text-left ">
-        <h3>Set traps and catch changes</h3>
-        <ul class="">
-          <li class="">
-            Know instantly when (almost) anything on the web changes
-          </li>
-          <li class="">
-            Automatic logbook of deltas, compare and share with anyone
-          </li>
-          <li class="">
-            Get notified when a specific phrase appears or value is reached
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- end .row -->
 
     <!-- Call to Action -->
-    <hr>
-
-    <div class="row">
+    <div class="row m-0">
       <div class="seven columns">
-        <h4>Take your internet addiction to a new level.</h4>
+        <h4 class="lowercase align-top">Take your internet addiction to a new level.</h4>
       </div>
-      <div class="five columns flex-center flex-column">
+      <div class="five columns flex-center flex-column m-tb-0">
         <a class="button button-orange" href="https://hypertrap.com/register">Set my first trap</a>
         <a href="./how-it-works.html">
           <strong>
@@ -111,11 +102,11 @@
     </div>
     <!-- end .row -->
 
-    <hr>
+    <hr style="margin-top: 1rem;">
     <!-- end Call to Action -->
 
     <div class="row">
-      <h3>Designed for:</h3>
+      <p class="m-b-0">Sort of designed for:</p>
       <div class="four columns">
         <ul>
           <li>Talent Agents &amp; Managers</li>
@@ -147,40 +138,29 @@
 
     <div class="row">
       <h4 class="text-center">Keep tabs on things that interest you in a way not possible before</h4> 
-      <div class="six columns">
+      <div class="six columns offset-by-three columns text-center">
         <img class="img-responsive" src="./images/main_screen.jpg" alt="A snapshot of the app's main screen">
-      </div>
-      <div class="six columns">
-        
-        <h5>
-          It's so easy to...
-        </h5>
-        <ul>
-          <li class="">
-            Blow your bosses mind
-          </li>
-          <li class="">
-            Impress your clients
-          </li>
-          <li class="">
-            Amaze your friends
-          </li>
-        </ul>
       </div>
     </div>
     <!-- end .row -->
 
     <hr>
 
-    <div class="row">
-      <div class="columns six offset-by-three m-t-3">
-        <a href="https://chrome.google.com/webstore/detail/hypertrap/cledmefbedeeoapeeplinjikeonchmjn" target="_blank">
-          <img class="img-responsive" src="./images/chrome_webstore_lg.png" alt="Click here to get the Hypertrap app Chrome extension.">
+    <div class="row m-tb-0 text-center download-links m-tb-0">
+      <div class="columns four m-tb-0">
+        <a href="https://play.google.com/store/apps/details?id=htcreator.jabracadabra.com.hypertrapcreator" target="_blank">
+          <img class="img-responsive google-play" src="./images/google-play-badge.png" alt="Click here to get the Hypertrap app on Andriod.">
         </a>
       </div>
-      <div class="columns twelve text-center">
-        <!-- <img src="./images/android_logo_30.png" alt="Andriod mobile app logo">
-        <img src="./images/ios_logo_30.png" alt="Apple iOs logo"> -->
+      <div class="columns four m-tb-0">
+        <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1271144614&mt=8" target="_blank">
+          <img class="img-responsive ios-store" src="./images/download-on-app-store.png" alt="Click here to get the Hypertrap app on iOs.">
+        </a>
+      </div>
+      <div class="columns four m-tb-0">
+        <a href="https://chrome.google.com/webstore/detail/hypertrap/cledmefbedeeoapeeplinjikeonchmjn" target="_blank">
+          <img class="img-responsive chrome-extension" src="./images/chrome_webstore_lg.png" alt="Click here to get the Hypertrap app Chrome extension.">
+        </a>
       </div>
     </div>
     <!-- end .row -->
@@ -190,13 +170,19 @@
   <footer class="text-center">
     <ul class="footer-links">
       <li>
-        <a href="./privacy-policy.html">Privacy Policy</a>
+        &copy; <strong>JABRA|</strong>CADABRA LLC
       </li>
       <li>
-        -
+        |
       </li>
       <li>
         <a href="./terms-conditions.html">Terms & Conditions</a>
+      </li>
+      <li>
+        |
+      </li>
+      <li>
+        <a href="./privacy-policy.html">Privacy Policy</a>
       </li>
     </ul>
   </footer>
