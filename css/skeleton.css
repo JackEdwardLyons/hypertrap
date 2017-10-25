@@ -209,6 +209,10 @@ small {
   }
 }
 
+.blue-text {
+  color: #0066CC;
+}
+
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -311,7 +315,7 @@ ul {
 }
 
 li {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 
