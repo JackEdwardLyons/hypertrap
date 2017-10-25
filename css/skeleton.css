@@ -196,16 +196,16 @@ small {
 
 @media (min-width: 550px) {
   h2 {
-    font-size: 4.2rem;
+    font-size: 3.8rem;
   }
   h3 {
-    font-size: 3.6rem;
+    font-size: 3.4rem;
   }
   h4 {
-    font-size: 3.0rem;
+    font-size: 2.8rem;
   }
   h5 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -379,6 +379,10 @@ ul {
   margin-top: 0 !important;
 }
 
+.m-t-minus-2 {
+  margin-top: -2rem;
+}
+
 .m-b-0 {
   margin-bottom: 0 !important;
 }
@@ -427,7 +431,7 @@ hr {
 }
 
 .download-links img {
-  max-width: 250px;
+  max-width: 125px;
   max-height: 100px;
   position: relative;
 }
@@ -437,7 +441,7 @@ hr {
 }
 
 .chrome-extension {
-  top: 10px;
+  margin-top: 5px !important;
 }
 
 .plus-list {
@@ -445,6 +449,11 @@ hr {
   margin-bottom: 0;
   position: relative;
   bottom: 3rem;
+}
+
+.plus-list > li {
+  margin-bottom: -1rem;
+  line-height: 1;
 }
 
 .plus-list > li:before {
@@ -455,52 +464,31 @@ hr {
   top: 8px;
 }
 
-@media screen and ( min-width: 400px ) {
-  .limited-time-offer {
-    right: 8%;
-  }
-}
-@media screen and ( min-width: 500px ) {
-  .limited-time-offer {
-    right: 18%;
-  }
-}
-@media screen and ( min-width: 600px ) {
-  .limited-time-offer {
-    right: 20%;
-  }
-}
-@media screen and ( min-width: 700px ) {
-  .limited-time-offer {
-    right: 24%;
-  }
-}
-@media screen and ( min-width: 800px ) {
-  .limited-time-offer {
-    right: 28%;
-  }
-}
-@media screen and ( min-width: 900px ) {
-  .limited-time-offer {
-    right: 30%;
-  }
-}
-@media screen and ( min-width: 1000px ) {
-  .limited-time-offer {
-    right: 30%;
-  }
-}
-@media screen and ( min-width: 1100px ) {
-  .limited-time-offer {
-    right: 32%;
-  }
-}
-@media screen and ( min-width: 1200px ) {
-  .limited-time-offer {
-    right: 34%;
-  }
-}
 
+@media screen and ( max-width: 1000px ) {
+  .four.columns.offset-by-two.special-width {
+    margin-left: 0 !important;
+    width: 48%;
+  }
+  .four.columns.special-width {
+    width: 48%;
+  }
+}
+@media screen and ( max-width: 650px ) {
+  .four.columns.offset-by-two.special-width {
+    margin-left: 0;
+    width: 100%;
+  }
+  .four.columns.special-width {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and ( min-width: 1280px ) {
+  .four.columns.special-width {
+    min-height: 298px;
+  }
+}
 
 
 /* Clearing
@@ -559,15 +547,19 @@ footer {
   color: #8A8B86;
   padding-top: 6px;
   margin-top: 3rem;
+  min-height: 15px;
 }
+
 
 .footer-links {
   list-style: none;
+  line-height: 0;
   margin: 0;
 }
 
 .footer-links li {
   font-size: 12px;
+  margin-top: .8rem;
 }
 
 .footer-links li > a {
