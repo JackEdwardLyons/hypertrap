@@ -5,8 +5,9 @@
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014
+*
+* Custom CSS by Jack Lyons www.jacklyons.me
 */
-
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -22,11 +23,8 @@
 - Spacing
 - Utilities
 - Clearing
-- Media Queries
 - Custom CSS
 */
-
-
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -114,6 +112,10 @@
 
 }
 
+.flex {
+  display: flex;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -121,10 +123,8 @@
   flex-direction: column;
 }
 
-
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
@@ -149,6 +149,9 @@ body {
   margin-bottom: 1em;
 }
 
+header {
+  margin-top: 5em;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -183,9 +186,7 @@ h5 {
   letter-spacing: -.05rem;
 }
 
-p, li {
-  font-size: 1.8rem;
-}
+p, li { font-size: 1.8rem; }
 
 small {
   font-size: 65%;
@@ -209,11 +210,11 @@ small {
   }
 }
 
-.blue-text {
-  color: #0066CC;
+.blue-text { color: #0066CC; }
+.smaller-font > p, .smaller-font li { 
+  font-size: 1.6rem;
+  font-weight: bold;
 }
-
-
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -222,11 +223,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #0FA0CE;
-}
-
-
+a:hover { color: #0FA0CE; }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -271,9 +268,7 @@ a:hover {
   border-color: #FB6C04;
 }
 
-.navigation a {
-  color: #000;
-}
+.navigation a { color: #000; }
 
 .navigation a.login {
   background: #1EAEDB;
@@ -285,10 +280,8 @@ a:hover {
   color: #FFF;
 }
 
-
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 
 /* Removes awkward default styles on some inputs for iOS */
 
@@ -298,51 +291,26 @@ label {
   font-weight: 600;
 }
 
-input[type="checkbox"] {
-  display: inline;
-}
-
+input[type="checkbox"] { display: inline; }
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-ul {
-  list-style: circle inside;
-}
+ul { list-style: circle inside; }
 
 ul {
   padding-left: 0;
   margin-top: 0;
 }
 
-li {
-  margin-bottom: 0;
-}
-
-
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+li { margin-bottom: 0; }
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.button {
-  margin-bottom: 1rem;
-}
-
-input {
-  margin-bottom: 1.5rem;
-}
-
-ul {
-  margin-bottom: 2.5rem;
-}
-
+.button { margin-bottom: 1rem; }
+input { margin-bottom: 1.5rem; }
+ul { margin-bottom: 2.5rem; }
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -352,78 +320,28 @@ ul {
   vertical-align: top;
 }
 
-.pos-relative {
-  position: relative;
-}
-
-.lowercase {
-  text-transform: lowercase;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.p-b-10 {
-  padding-bottom: 10px;
-}
-
-.m-tb-1 {
-  margin: 1em 0;
-}
-
-.m-t-0 {
-  margin-top: 0 !important;
-}
-
-.m-t-minus-2 {
-  margin-top: -2rem;
-}
-
-.m-l-0 {
-  margin-left: 0;
-}
-
-.m-b-0 {
-  margin-bottom: 0 !important;
-}
+.pos-relative { position: relative; }
+.lowercase { text-transform: lowercase; }
+.uppercase { text-transform: uppercase; }
+.bold { font-weight: bold; }
+.text-center { text-align: center; }
+.text-left  { text-align: left; }
+.p-b-10 { padding-bottom: 10px; }
+.m-tb-1 { margin: 1em 0; }
+.m-t-0 { margin-top: 0 !important; }
+.m-l-0 { margin-left: 0; }
+.m-b-0 { margin-bottom: 0 !important; }
+.m-t-minus-2 { margin-top: -2rem; }
 
 .m-tb-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-
-.m-t-1 {
-  margin-top: 1em;
-}
-
-.m-t-3 {
-  margin-top: 3em;
-}
-
-.m-0 {
-  margin: 0 !important;
-}
-
-.p-t-0 {
-  padding-top: 0 !important;
-}
-
-.w-100 {
-  width: 100% !important;
-}
+.m-t-1 { margin-top: 1em; }
+.m-t-3 { margin-top: 3em; }
+.m-0   { margin: 0 !important; }
+.p-t-0 { padding-top: 0 !important; }
+.w-100 { width: 100% !important; }
 
 .up-10px {
   position: relative;
@@ -444,9 +362,7 @@ ul {
   list-style: none;
 }
 
-.grey-text {
-  color: #7F7F7F;
-}
+.grey-text { color: #7F7F7F; }
 
 .grey-feature {
   background: #E7E7E7;
@@ -472,13 +388,8 @@ hr {
   position: relative;
 }
 
-.ios-store {
-  bottom: 2px;
-}
-
-.chrome-extension {
-  margin-top: 5px !important;
-}
+.ios-store { bottom: 2px; }
+.chrome-extension { margin-top: 5px !important; }
 
 .plus-list {
   list-style: none;
@@ -565,52 +476,31 @@ hr {
 }
 
 
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-
-/* Larger than mobile */
-
-
-/* Larger than phablet (also point when grid becomes active) */
-
-
-/* Larger than tablet */
-
-
-/* Larger than desktop */
-
-
-/* Larger than Desktop HD */
-
-
 /* Custom CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.title {
-  text-align: center;
+.arrow-img { 
+  max-width: 763px; 
+  margin: 0 auto;
+}
+@media screen and ( max-width: 800px ) {
+  .arrow-img {
+    width: 100%;
+    margin: 0 auto;
+    height: 30px;
+  }
 }
 
-.container {
-  max-width: 1000px;
-}
+.title     { text-align: center; }
+.container { max-width: 1000px; }
 
 footer {
   background: #333;
   color: #8A8B86;
   padding-top: 6px;
   margin-top: 3rem;
-  min-height: 15px;
+  min-height: 17px;
 }
-
 
 .footer-links {
   list-style: none;
@@ -623,25 +513,18 @@ footer {
   margin-top: .8rem;
 }
 
-.footer-links li > a {
-  color: #AAAAAA;
-}
+.footer-links li > a { color: #AAAAAA; }
 
 .footer-links li > a:hover {
   color: #8A8B86;
   cursor: pointer;
 }
 
-.footer-links li {
-  display: inline-block;
-}
+.footer-links li { display: inline-block; }
 
-li > a {
-  text-decoration: none;
-}
+li > a { text-decoration: none; }
 
-/* navigation */
-
+/* Navigation */
 .navigation {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -684,16 +567,14 @@ li > a {
   width: 90%;
 }
 
-/* menu */
-
+/* Menu */
 .navigation .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
 }
 
-/* menu icon */
-
+/* Menu icon */
 .navigation .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -724,37 +605,21 @@ li > a {
   width: 100%;
 }
 
-.navigation .menu-icon .navicon:before {
-  top: 5px;
-}
+.navigation .menu-icon .navicon:before { top: 5px; }
+.navigation .menu-icon .navicon:after { top: -5px; }
 
-.navigation .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.navigation .menu-btn {
-  display: none;
-}
+/* Menu btn */
+.navigation .menu-btn { display: none; }
 
 .navigation .menu-btn:checked ~ .menu {
-  min-height: 206px;
+  min-height: 177px;
   position: relative;
   top: -7px;
 }
 
-.navigation .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.navigation .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.navigation .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
+.navigation .menu-btn:checked ~ .menu-icon .navicon { background: transparent; }
+.navigation .menu-btn:checked ~ .menu-icon .navicon:before { transform: rotate(-45deg); }
+.navigation .menu-btn:checked ~ .menu-icon .navicon:after { transform: rotate(45deg); }
 
 .navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
@@ -781,9 +646,7 @@ li > a {
   }
 }
 
-.value-prop {
-  margin-top: 1rem;
-}
+.value-prop { margin-top: 1rem; }
 
 .value-props {
   margin-top: 4rem;
@@ -796,9 +659,7 @@ li > a {
   margin: 2.5rem auto 0;
 }
 
-.value-props-img {
-  width: 100%;
-}
+.value-props-img { width: 100%; }
 
 .img-responsive {
   width: 100%;
