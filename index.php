@@ -2,75 +2,18 @@
 <html lang="en">
 
 <head>
+  
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>hypertrap</title>
-  <!-- For Google -->
-  <meta name="description" content="Know instantly when (almost) anything on the web changes." />
-  <meta name="keywords" content="website scraper, website tracker" />
-  <meta name="author" content="hypertrap" />
-  <meta name="copyright" content="JABRA|CADABRA LLC" />
-  <meta name="application-name" content="hypertrap" />
-
-  <!-- For Facebook -->
-  <meta property="og:url" content="https://www.hypertrap.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="hypertrap" />
-  <meta property="og:description" content="Keep tabs on things that interest you in a way not possible before." />  
-  <meta property="og:image" content="https://www.hypertrap.com/images/logo_big.png" />
-
-  <!-- For Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="hypertrap" />
-  <meta name="twitter:description" content="" />
-  <meta name="twitter:image" content="https://www.hypertrap.com/images/hypertrap_logo_header.png" />
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="css/fonts.css" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <?php include('templates/head.php'); ?>
 
 </head>
 
 <body class="code-snippets-visible">
 
   <!-- Navbar -->
-  <nav class="navigation">
-    <a href="https://www.hypertrap.com/" class="logo">
-      <img src="./images/hypertrap_logo_header.png" alt="The Hypertrap logo">
-    </a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn">
-      <span class="navicon"></span>
-    </label>
-    <ul class="menu">
-      <li class="uppercase">
-        <a href="./how-it-works.html">How it Works</a>
-      </li>
-      <li class="uppercase">
-        <a href="./about.html">About</a>
-      </li>
-      <li class="uppercase">
-        <a href="./faq.html">FAQs</a>
-      </li>
-      <li class="uppercase">
-        <a class="login" href="https://hypertrap.com/">Login</a>
-      </li>
-    </ul>
-  </nav>
+  <?php include('templates/navigation.php'); ?>
+
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -195,25 +138,7 @@
   </div><!-- end .container -->
 
   <!-- Footer -->
-  <footer class="text-center">
-    <ul class="footer-links">
-      <li>
-        &copy; <strong>JABRA|</strong>CADABRA LLC
-      </li>
-      <li>
-        |
-      </li>
-      <li>
-        <a href="./terms-conditions.html">Terms & Conditions</a>
-      </li>
-      <li>
-        |
-      </li>
-      <li>
-        <a href="./privacy-policy.html">Privacy Policy</a>
-      </li>
-    </ul>
-  </footer>
+  <?php include('templates/footer.php'); ?>
   <!-- end Footer -->
 
   <!-- Google Analytics -->

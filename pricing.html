@@ -16,7 +16,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="css/fonts.css" rel="stylesheet" type="text/css">
+  <link href="css/css.css" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -60,99 +60,38 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <header class="header">
-      <h2 class="title m-tb-1">FAQs</h2>
-      <h4 class="text-center">We'll help you trap the entire universe if you want.</h4>
-
-      <div class="value-props row">
-        <div class="twelve columns">
-          <h5>
-            Questions about a specific trap you created? Please use the
-            <strong>Maintenance Log</strong> for that trap inside your account. It’s MUCH easier and faster for us to help you this
-            way.
-          </h5>
-          <h5>
-            For general Support inquiries, send email to:
-            <img class="pos-relative" style="top: 10px;" src="./images/support-hypertrap.png" alt="This is our email! No spam mail please.">
-          </h5>
-        </div>
-      </div>
-      <!-- end .row -->
+      <h2 class="title m-t-1 m-b-0">About Us</h2>
     </header>
 
-
-    <div class="row masonry">
-      <div class=" faq-box">
-        <p class="text-center">
-          <strong>What is the difference between the 3 types of traps?</strong>
+    <div class="row">
+      <div class="columns twelve m-t-0">
+        <p class="m-t-0">
+          If you're curious, Hypertrap didn't start out as a business. It was actually just a simple Perl script 
+          I wrote originally named dragon.pl that ran from cron on my laptop. I have this friend who is maniacal 
+          about always running the most current version of software so I made it for him to know the moment a new 
+          version was released. Then things started to kinda spiral from there.
         </p>
         <p>
-          <strong>Content</strong> - anything
-          <br>
-          <strong>Keyword</strong> - specify a keyword or phrase
-          <br>
-          <strong>Value Threshold</strong> - specify a value
-        </p>
-      </div>
-      <div class=" faq-box">
-        <p class="text-center">
-          <strong>When in targeting mode, why do some areas of a page show "cannot target"?</strong>
+          He told a friend, and the next thing I knew I had 14 different people all wanting to get notified when all sorts of
+          different things changed on the web. So I kept working to make the script into something these friends could use on
+          their own so I wouldn't have to manually set up each site. Some of these guys were acting totally "hyper" about getting
+          notified the instant something changed that they cared deeply about. So I decided to call this whole project
+          Hypertrap.
         </p>
         <p>
-          Cannot target means you have tried to select an iFrame, and hypertrap cannot monitor what is inside an iFrame.
+          Hopefully, it's at a point now where you too can use it. As you can see, this didn't start out as a business.  
+          We'll see how *that* actually goes...
         </p>
-      </div>
-      <div class=" faq-box">
-        <p class="text-center">
-          <strong>What commands are available in 'targeting mode'?</strong>
-        </p>
-        <ul>
-          <li>[R] de-selects everything</li>
-          <li>[P] selects the entire page</li>
-          <li>[H] hide obstructing element</li>
-          <li>[I] ignore element</li>
-          <li>Click an inner section to cycle through outer sections</li>
-          <li>Shift-click to select multiple sections or to de-select a single section</li>
-        </ul>
-      </div>
-      <div class=" faq-box">
-        <p class="text-center">
-          <strong>Does Hypertrap have ads?</strong>
-        </p>
-        <p>
-          As few as possible.  Hypertrap is on the IAB Bots & Spiders list so it won't be counted by adservers.
-        </p>
-      </div>
-      <div class=" faq-box">
-        <p class="text-center">
-          <strong>When trapping a number, should I select Keyword or Value Threshold?</strong>
-        </p>
-        <p>
-          Value Threshold will give you the most flexibility.
-        </p>
-      </div>
-      <div class=" faq-box">
-        <p class="text-center">
-          <strong>Is it ok to trap a number with a comma in it using Value Threshold?</strong>
-        </p>
-        <p>
-            Yes.  In fact, dollar signs, other chars are also fine, 
-            everything in the target element gets tossed except for the number.
-        </p>
-      </div>
-      <div class=" faq-box">
-        <p class="text-center">
-          <strong>Can hypertrap detect image changes?</strong>
-        </p>
-        <p>
-          Yes, it sure can!
-        </p>
+        <p>Good trapping,</p>
+        <p>Brady.</p>
+        
+        <a href="./images/arrow_sweetspot.png" class="flex-arrow">
+          <img class="arrow-img" src="./images/arrow_sweetspot.png" alt="A diagram of the Hypertrap User Sweet Spot." >
+        </a>
       </div>
     </div>
     <!-- end .row -->
 
-    <div>
-      <p class="text-center">Last Updated: 11/02/2017</p>
-    </div>
 
     <!-- Download Links -->
     <div class="row m-tb-0 text-center download-links m-tb-0">
@@ -175,7 +114,8 @@
     <!-- end Download Links -->
 
 
-  </div><!-- end .container -->
+  </div> <!-- end .container -->
+
 
   <!-- Footer -->
   <footer class="text-center">
@@ -196,8 +136,8 @@
         <a href="./privacy-policy.html">Privacy Policy</a>
       </li>
     </ul>
-  </footer>
-  <!-- end Footer -->
+    </footer>
+    <!-- end Footer -->
 
   <!-- Google Analytics -->
   <script type="text/javascript">
