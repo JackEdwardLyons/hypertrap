@@ -2,59 +2,17 @@
 <html lang="en">
 
 <head>
-
+  
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>hypertrap</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="css/fonts.css" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <?php include('templates/head.php'); ?>
+  
 </head>
 
 <body class="code-snippets-visible">
    
   <!-- Navbar -->
-  <nav class="navigation">
-    <a href="https://www.hypertrap.com/" class="logo">
-      <img src="./images/hypertrap_logo_header.png" alt="The Hypertrap logo">
-    </a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn">
-      <span class="navicon"></span>
-    </label>
-    <ul class="menu">
-      <li class="uppercase">
-        <a href="./how-it-works.html">How it Works</a>
-      </li>
-      <li class="uppercase">
-        <a href="./about.html">About</a>
-      </li>
-      <li class="uppercase">
-        <a href="./faq.html">FAQs</a>
-      </li>
-      <li class="uppercase">
-        <a class="login" href="https://hypertrap.com/">Login</a>
-      </li>
-    </ul>
-  </nav>
+  <?php include('templates/navigation.php'); ?>
       
       
   <!-- Primary Page Layout
@@ -84,7 +42,6 @@
         personal information from a child under age 13, we will delete that information as quickly as possible. If you believe that a child
         under 13 may have provided us personal information, please contact us at the address at the bottom of this page.</p>
         
-        
         <p>Information We Collect Automatically<br>
         Browsing the Site does not require you to register for an account or provide any personal information to us. In general, Hypertrap will
         gather some generic information automatically. This generic information may include the internet address assigned to your computer, the
@@ -96,7 +53,6 @@
         but not in a manner that would identify you personally. As part of this use of information, we may provide aggregate information, not
         information about you personally, to our partners about how our users, collectively, use our Service.</p>
         
-        
         <p>Information You Provide to Us<br>
         We receive and store any information you enter on the Service or provide to us in any other way. You can choose not to provide us with
         certain information, though you may not be able to take advantage of many Service features. The personal information you provide may be
@@ -105,7 +61,6 @@
         correspondence about your activities or postings on the Service, we may collect such information into a file specific to you. You agree
         that we may use your personal information to contact you as provided herein, though our intent is that email is the only channel we will
         use to contact you without your consent.</p>
-        
         
         <p>In order for you to take full advantage of the Service, you must provide registration information, including an e-mail address and
         password. We may also request demographic information and unique identifiers in order to provide you with a more personalized service,
@@ -120,14 +75,12 @@
         information becomes publicly available and can be collected and used by others and redistributed through the internet and other media
         channels.</p>
         
-        
         <p>Is My Information Secure?<br>
         We treat data as an asset that must be protected against loss and unauthorized access. We use industry-standard Secure Socket Layer
         (SSL) software to protect the security of your personal information during transmission, which encrypts all of the information you
         input. All personal information collected from other services that you provide through the use of the Service is stored securely. Only
         employees who need personal information to perform a specific job (for example, a customer service representative) are granted access to
         it. All of our employees are kept up to date on our privacy and security practices.</p>
-        
         
         <p>Due to the existing regulatory environment, we cannot ensure that all of your private communications and other personal information
         will never be disclosed in ways not otherwise described in this Privacy Policy. By way of example, we may be forced to disclose personal
@@ -141,7 +94,6 @@
         password to forward libelous material through the Service. Therefore, if your password has been compromised for any reason, you should
         immediately change your password.
         </p>
-        
         
         <p>What about Cookies?<br>
         When you visit the Site, we may send one or more "cookies" to your computer hard drive through your Web browser. A cookie is a small
@@ -157,7 +109,6 @@
         initially set up to accept cookies, but you can reset your browser to refuse all cookies or to indicate when a cookie is being sent. We
         recommend that you leave the cookies activated, however, because deleting cookies may reduce the functionality of Hypertrap. We do not
         control the use of cookies by third parties.</p>
-        
         
         <p>Will Hypertrap Share Any of the Information it Receives with Other Entities?<br>
         We may use third party service providers to facilitate or outsource one or more aspects of our business and therefore we may provide
@@ -183,10 +134,8 @@
         privacy policies of third parties, you are subject to the privacy policies of that third party. We encourage you to ask questions before
         you disclose your personal information to others.</p>
         
-        
         <p>Except as set forth above, you will be notified when your personal information may be shared with third parties, and you will be able
         to prevent the sharing of this information.</p>
-        
         
         <p>Accessing, Reviewing and Changing Your Personal Information<br>
         Traps can be deactivated at anytime though prior traps may remain in our electronic archive. You can change your email address and
@@ -196,7 +145,6 @@
         Hypertrap will only update your information on third party sites or send you information (phone, sms, etc.) with your specific consent
         such as when you add traps to your account.</p>
         
-        
         <p>User Communications<br>
         You may input your contact information into the Service so that Hypertrap may contact you. When you enter your contact information or
         send an email or other communication to Hypertrap, we may retain those communications in order to process your inquiries and respond to
@@ -204,13 +152,11 @@
         this information to any third parties. To the extent your e-mail address is provided to Hypertrap, you may receive e-mail or other
         communications from us.</p>
         
-        
         <p>Your California Privacy Rights<br>
         Under California Civil Code Sections 1798.83-1798.84, California residents are entitled to ask us for a notice identifying the
         categories of personal information which we share with our affiliates and/or third parties for marketing purposes, and providing contact
         information for such affiliates and/or third parties. If you are a California resident and would like a copy of this notice, please
         submit a written request to to the address below.</p>
-        
         
         <p>Changes to this Policy<br>
         Please note that this Privacy Policy may change from time to time. We will not reduce your rights under this Policy without your
@@ -218,7 +164,6 @@
         this Privacy Policy at any time by posting the amended terms on the Site. All amended terms shall automatically be effective thirty (30)
         days after they are initially posted on the Site. Each version of this Policy will be identified at the top of the page by its effective
         date.</p>
-        
 
         <p>Contact Us<br>
         If you have any additional questions or concerns about this Privacy Policy,<br>
@@ -234,28 +179,6 @@
       </div>
     </div><!-- end .row -->
 
-
-    <!-- Call to Action -->
-    <!-- <hr>
-
-    <div class="row m-0">
-        <div class="seven columns">
-          <h4 class="lowercase align-top">Take your internet addiction to a new level.</h4>
-        </div>
-        <div class="five columns flex-center flex-column m-tb-0">
-          <a class="button button-orange" href="https://hypertrap.com/register">Set my first trap</a>
-          <a href="./how-it-works.html">
-            <strong>
-              <small class="uppercase">or see how it works.</small>
-            </strong>
-          </a>
-        </div>
-      </div>
-
-      <hr> -->
-      <!-- end Call to Action -->
-
-      
     <!-- Download Links -->
     <div class="row m-tb-0 text-center download-links m-tb-0">
       <div class="columns four m-tb-0">
@@ -278,27 +201,8 @@
     
   </div><!-- end .container -->
 
-
   <!-- Footer -->
-  <footer class="text-center">
-    <ul class="footer-links">
-      <li>
-        &copy; <strong>JABRA|</strong>CADABRA LLC
-      </li>
-      <li>
-        |
-      </li>
-      <li>
-        <a href="./terms-conditions.html">Terms & Conditions</a>
-      </li>
-      <li>
-        |
-      </li>
-      <li>
-        <a href="./privacy-policy.html">Privacy Policy</a>
-      </li>
-    </ul>
-  </footer>
+  <?php include('templates/footer.php'); ?>
   <!-- end Footer -->
 
   <!-- Google Analytics -->

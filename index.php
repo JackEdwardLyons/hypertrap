@@ -44,7 +44,6 @@
       </div><!-- end .row -->
     </header>
 
-
     <!-- Call to Action -->
     <div class="row">
       <div class="seven columns">
@@ -135,6 +134,7 @@
         </a>
       </div>
     </div><!-- end .row -->
+
   </div><!-- end .container -->
 
   <!-- Footer -->

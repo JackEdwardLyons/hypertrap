@@ -2,59 +2,17 @@
 <html lang="en">
 
 <head>
-
+  
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>hypertrap</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="css/css.css" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <?php include('templates/head.php'); ?>
+  
 </head>
 
 <body class="code-snippets-visible">
 
   <!-- Navbar -->
-  <nav class="navigation">
-    <a href="https://www.hypertrap.com/" class="logo">
-      <img src="./images/hypertrap_logo_header.png" alt="The Hypertrap logo">
-    </a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn">
-      <span class="navicon"></span>
-    </label>
-    <ul class="menu">
-      <li class="uppercase">
-        <a href="./how-it-works.html">How it Works</a>
-      </li>
-      <li class="uppercase">
-        <a href="./about.html">About</a>
-      </li>
-      <li class="uppercase">
-        <a href="./faq.html">FAQs</a>
-      </li>
-      <li class="uppercase">
-        <a class="login" href="https://hypertrap.com/">Login</a>
-      </li>
-    </ul>
-  </nav>
+  <?php include('templates/navigation.php'); ?>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -116,28 +74,9 @@
 
   </div> <!-- end .container -->
 
-
   <!-- Footer -->
-  <footer class="text-center">
-    <ul class="footer-links">
-      <li>
-        &copy; <strong>JABRA|</strong>CADABRA LLC
-      </li>
-      <li>
-        |
-      </li>
-      <li>
-        <a href="./terms-conditions.html">Terms & Conditions</a>
-      </li>
-      <li>
-        |
-      </li>
-      <li>
-        <a href="./privacy-policy.html">Privacy Policy</a>
-      </li>
-    </ul>
-    </footer>
-    <!-- end Footer -->
+  <?php include('templates/footer.php'); ?>
+  <!-- end Footer -->
 
   <!-- Google Analytics -->
   <script type="text/javascript">
